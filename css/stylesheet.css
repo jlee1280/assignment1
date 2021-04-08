@@ -2,8 +2,11 @@ body {
   background-color:#f2e9de;
   color:#d7827e;
 }
+.about-docs {
+  word-spacing: 0.5em;
+}
 
-h1,h2 {
+h1,h2{
   text-align: center;
   font-family: 'Playfair Display', serif;
 }
@@ -20,9 +23,7 @@ button {
 }
 .dark-theme {
   background-color:#907aa9;
-  float: right;
 }
-
 .save, .cancel {
   background-color:#ea9d34;
   float: right;
@@ -32,33 +33,61 @@ button {
   background-color:#eb6f92;
 }
 textarea {
-  padding: 50px 200px;
+  padding: 5em;
   border-color:#56949f;
 }
-footer{
-  text-align: center;
+.footer{
+  height: 3em;
+  display: flex;
+  justify-content: center;
 }
-img {
-  width: 10%;
-  height:10%;
+ img {
+ height: 3em;
 }
-
+.keep {
+  font-size: small;
+}
 @media only screen and (min-width: 600px) {
-  .first-container{
-      background-color: #fffaf3;
-      height: 100%;
-      width: 20%;
-      position: fixed;
-      top: 0;
-      left: 0;
- }
-  .second-container {
-      width: 80%;
-      padding: 0px 35px;
-      display: flex;
-      flex-direction: column;
- }
- .textarea {
-   align-items: center;
- }
+body {
+  background-color: #fffaf3;
+  grid-template-columns: 20% 80%;
+  display: grid;
+}
+.first-container {
+grid-column: 1 ;
+grid-row: 1;
+}
+.about-docs {
+  text-align: right;
+}
+.second-container{
+  grid-column: 2;
+  grid-row: 1;
+}
+.third-container {
+  grid-column: 2;
+  grid-row: 2;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+}
+.fourth-container {
+  grid-column: 2;
+  grid-row: 3;
+  display: flex;
+  justify-content: center;
+}
+.fifth-container {
+    grid-column: 2;
+    grid-row: 4;
+  }
+.second-container, .third-container, .fourth-container, .fifth-container, footer {
+    background-color:#f2e9de;
+  }
+footer
+{
+  grid-column: 2;
+  grid-row: 5;
+  padding-bottom: 100%;
+}
 }
