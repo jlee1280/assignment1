@@ -2,19 +2,13 @@ body {
   background-color:#f2e9de;
   color:#d7827e;
 }
-header p {
-  float: right;
-  word-spacing: 10px;
-}
-header {
-  padding-bottom: 60px;
-}
+
 h1,h2 {
   text-align: center;
   font-family: 'Playfair Display', serif;
 }
 .functions{
-  padding-bottom: 10px;
+  padding-bottom: 1em;
 }
 button {
   background-color:#56949f;
@@ -28,13 +22,11 @@ button {
   background-color:#907aa9;
   float: right;
 }
-.save-cancel{
-  padding: 30px;
-}
+
 .save, .cancel {
   background-color:#ea9d34;
   float: right;
-  margin-right: 5px;
+  margin-right: 0.5em;
 }
 .cancel {
   background-color:#eb6f92;
@@ -47,8 +39,8 @@ footer{
   text-align: center;
 }
 img {
-  width: 50px;
-  height: 50px;
+  width: 10%;
+  height:10%;
 }
 
 @media only screen and (min-width: 600px) {
@@ -62,7 +54,6 @@ img {
  }
   .second-container {
       width: 80%;
-      margin-left: 150px;
       padding: 0px 35px;
       display: flex;
       flex-direction: column;
