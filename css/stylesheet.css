@@ -5,7 +5,6 @@ body {
 .about-docs {
   word-spacing: 0.5em;
 }
-
 h1,h2{
   text-align: center;
   font-family: 'Playfair Display', serif;
@@ -26,8 +25,6 @@ button {
 }
 .save, .cancel {
   background-color:#ea9d34;
-  float: right;
-  margin-right: 0.5em;
 }
 .cancel {
   background-color:#eb6f92;
@@ -41,11 +38,18 @@ textarea {
   display: flex;
   justify-content: center;
 }
- img {
+ img{
  height: 3em;
 }
-.keep {
+.keep{
   font-size: small;
+}
+.fifth-container {
+  justify-content: end;
+}
+.dark-mode {
+  background-color:#d7827e;
+  color:purple;
 }
 @media only screen and (min-width: 600px) {
 body {
@@ -88,6 +92,9 @@ footer
 {
   grid-column: 2;
   grid-row: 5;
-  padding-bottom: 100%;
+}
+.dark-mode {
+  background-color:#d7827e;
+  color:purple;
 }
 }
