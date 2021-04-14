@@ -1,26 +1,31 @@
-// Notes:
+const themebtn = document.querySelector(".dark-theme");
+const sideTheme = document.querySelector("body, h1");
+const textTheme = document.querySelector(".fourth-container");
+const btnsTheme = document.querySelector(".new-note");
+const saveBtn = document.querySelector(".save");
+const cancelBtn = document.querySelector(".cancel");
 
-
-{/* <script type="text/javascript">
-  document.addEventListener("DOMContentLoaded", function(event) {
-    document.documentElement.setAttribute("data-theme", "dark");
-  });
-</script> */}
-
-
-{/* <script>
-function myFunction() {
-  document.getElementById("myForm").reset();
+function changeTheme()
+{
+  if (themebtn.textContent === "Dark Theme")
+  {
+    themebtn.textContent = "Light Theme";
+ themebtn.classList.toggle("dark-mode");
+ sideTheme.classList.toggle("dark-mode");
+ textTheme.classList.toggle("dark-mode");
+ btnsTheme.classList.toggle("dark-mode");
+ saveBtn.classList.toggle("dark-mode");
+ cancelBtn.classList.toggle("dark-mode");
+  }
+  else
+  {
+    themebtn.textContent = "Dark Theme";
+    themebtn.classList.toggle("dark-mode");
+    sideTheme.classList.toggle("dark-mode");
+    textTheme.classList.toggle("dark-mode");
+    btnsTheme.classList.toggle("dark-mode");
+    saveBtn.classList.toggle("dark-mode");
+    cancelBtn.classList.toggle("dark-mode");
+  }
 }
-</script> */}
-
-
-{/* <script>
-  var form = document.querySelector("form");
-  form.addEventListener("submit", function(event) {
-    console.log("Saving value", form.elements.value.value);
-    event.preventDefault();
-  });
-</script> */}
-
-
+themebtn.addEventListener('click', changeTheme);
