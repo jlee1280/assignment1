@@ -28,4 +28,22 @@ function changeTheme()
     cancelBtn.classList.toggle("dark-mode");
   }
 }
+
+
+function hide()
+{
+if (cancelBtn.style.display === "none") {
+  cancelBtn.style.display = "block";
+}
+  else{
+  cancelBtn.style.display = "none";
+  saveBtn.style.display = "none";
+  textTheme.style.display = "none";
+}
+}
+
+
+
+
 themebtn.addEventListener('click', changeTheme);
+cancelBtn.addEventListener('click', hide);
