@@ -6,10 +6,11 @@
 			<link rel="preconnect" href="https://fonts.gstatic.com">
 				<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
 					<link rel="stylesheet" href="css/stylesheet.css">
+					<meta name="viewport" content="width=device-width, initial-scale=1.0">
 					<script src= "scripts/scripts.js" defer></script>
 					</head>
 					<body>
-						<main class="first-container">
+						<div class="first-container">
 							<nav class="notes">
 								<h1>My Notes</h1>
 								<ul>
@@ -21,18 +22,20 @@
 									</li>
 								</ul>
 							</nav>
-						</main>
+						</div>
 						<section class ="second-container">
-								<h2>Take Better Notes </h2>
+							<header>
+								<h1>Take Better Notes </h1>
 								<nav class="about-docs">
 								<p>
 									<a href="">About</a>
 									<a href="">Docs</a>
 								</p>
 							</nav>
+						</header>
 							<section class="third-container">
 								<button type="button" value="new-note" class="new-note">New Note</button>
-								<button onclick ="myFunction()" class="dark-theme">Dark Theme</button>
+								<button type="button" class="dark-theme">Dark Theme</button>
 							</section>
                         </section>
                         <article class ="fourth-container">
@@ -42,7 +45,7 @@
                         </article>
                             <div class ="fifth-container">
 							<section class="save-cancel">
-								<button type="reset" value="cancel" class="cancel">Cancel</button>
+								<button type="button" value="cancel" class="cancel">Cancel</button>
 								<button type="submit" value="save" class="save">Save</button>
 							</section>
                         </div>
