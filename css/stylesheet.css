@@ -51,6 +51,10 @@ textarea {
   background-color:#d7827e;
   color:purple;
 }
+.blank
+{
+  color:white;
+}
 @media only screen and (min-width: 600px) {
 body {
   background-color: #fffaf3;
@@ -92,9 +96,5 @@ footer
 {
   grid-column: 2;
   grid-row: 5;
-}
-.dark-mode {
-  background-color:#d7827e;
-  color:purple;
 }
 }
