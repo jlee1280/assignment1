@@ -45,17 +45,24 @@ if (cancelBtn.style.display === "none") {
 function show()
 {
   if (noteBtn.textContent === "New Note") {
-    const textarea = document.querySelector("textarea");
+  const textarea = document.querySelector("textarea");
   cancelBtn.style.display = "initial";
   saveBtn.style.display = "initial";
   textTheme.style.display = "flex";
-  textarea.value = "";
-} 
-else{
-
+  textarea.value = "";} 
 }
+var notesArray = [
+  {title:"note one", body:"this is my first note"}, 
+];
+
+function savingText()
+{
+ var title = prompt("What title do you wish to put note in?")
+ var body = document.getElementById('text').value;
+ notesArray.push({title,body})
 }
 
 themebtn.addEventListener('click', changeTheme);
 cancelBtn.addEventListener('click', hide);
 noteBtn.addEventListener('click', show);
+saveBtn.addEventListener('click', savingText);
