@@ -45,9 +45,11 @@ if (cancelBtn.style.display === "none") {
 function show()
 {
   if (noteBtn.textContent === "New Note") {
+    const textarea = document.querySelector("textarea");
   cancelBtn.style.display = "initial";
   saveBtn.style.display = "initial";
   textTheme.style.display = "flex";
+  textarea.value = "";
 } 
 else{
 
